@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+:root {
+  --bg-cyber: #0A0E0C;
+  --card-cyber: #111A16;
+  --neon-green: #00FF87;
+  --emerald-accent: #10B981;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #0A0E0C;
+  color: #E2E8F0;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+/* Scrollbar estilo Cyberpunk / Neon Tech */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0A0E0C;
+}
+::-webkit-scrollbar-thumb {
+  background: #182620;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 255, 135, 0.2);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00FF87;
+  box-shadow: 0 0 12px #00FF87;
+}
+
+/* Patrón de cuadrícula digital Cyberpunk */
+.cyber-grid {
+  background-size: 44px 44px;
+  background-image: 
+    linear-gradient(to right, rgba(0, 255, 135, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 255, 135, 0.035) 1px, transparent 1px);
+}
+
+/* Efecto de brillo de texto neón */
+.neon-glow-text {
+  text-shadow: 0 0 12px rgba(0, 255, 135, 0.45);
+}
+
+.neon-glow-box {
+  box-shadow: 0 0 25px -4px rgba(0, 255, 135, 0.25);
+}
+
+.neon-glow-box-strong {
+  box-shadow: 0 0 35px -2px rgba(0, 255, 135, 0.45);
+}
